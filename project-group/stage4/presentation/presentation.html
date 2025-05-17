@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Тимофеева Е. Н.">
+  <meta name="author" content="Оширова Ю. Н.">
+  <meta name="author" content="Сидорова Н. А.">
+  <meta name="author" content="Пронякова О. М.">
+  <title>Образование планетных систем</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reset.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/reveal.css">
+  <style>
+    .reveal .sourceCode {  /* see #7635 */
+      overflow: visible;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@^4//dist/theme/beige.css" id="theme">
+  
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Образование планетных систем</h1>
+  <p class="subtitle">Результаты проекта</p>
+  <p class="author">Тимофеева Е. Н.</p>
+  <p class="author">Оширова Ю. Н.</p>
+  <p class="author">Сидорова Н. А.</p>
+  <p class="author">Пронякова О. М.</p>
+  <p class="institute">Российский университет дружбы народов, Москва,
+Россия</p>
+  <p class="date">2 мая 2025</p>
+</section>
+
+<section>
+<section id="информация" class="title-slide slide level1">
+<h1>Информация</h1>
+
+</section>
+<section id="состав-исследовательской-команды" class="slide level2">
+<h2>Состав исследовательской команды</h2>
+<div class="columns" data-align="center">
+<div class="column" style="width:50%;">
+<p>Студенты группы НФИбд-01-22</p>
+<ul>
+<li>Тимофеева Екатерина Николаевна</li>
+<li>Оширова Юлия Николаевна</li>
+<li>Пронякова Ольга Максимовна</li>
+<li>Сидорова Наталья Андреевна</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><img data-src="./image/1.jpg" /></p>
+</div>
+</div>
+</section></section>
+<section>
+<section id="вводная-часть" class="title-slide slide level1">
+<h1>Вводная часть</h1>
+
+</section>
+<section id="введение" class="slide level2">
+<h2>Введение</h2>
+<p>Формирование планетных систем — один из фундаментальных процессов,
+определяющих структуру Вселенной. Нас интересует вопрос: как из
+хаотичного облака газа и пыли возникает упорядоченная система с
+центральной звездой и вращающимися вокруг неё планетами?</p>
+<p>В рамках нашего проекта мы стремились не только изучить теоретические
+аспекты этой задачи, но и реализовать численную модель, способную
+имитировать процессы, происходящие на ранних стадиях формирования
+планетных систем.</p>
+</section>
+<section id="научная-проблема" class="slide level2">
+<h2>Научная проблема</h2>
+<p>Процесс образования планет — это сложная система взаимодействий между
+газом, пылью и развивающимися телами в протопланетном диске. Основные
+механизмы, которые мы моделировали:</p>
+<ol type="1">
+<li>Гравитационное взаимодействие между телами (модель N-тел).</li>
+<li>Гидродинамика газа в диске вокруг центрального объекта.</li>
+<li>Слияние частиц при столкновениях с учётом физических критериев.</li>
+</ol>
+<p>Каждый из этих процессов важен для формирования структуры системы,
+устойчивых орбит и образования протопланет.</p>
+</section>
+<section id="модель-и-алгоритмы" class="slide level2">
+<h2>Модель и алгоритмы</h2>
+<p>В проекте была построена многокомпонентная численная модель,
+включающая три ключевых алгоритма. Каждый из них моделирует важный
+физический аспект формирования планетных систем:</p>
+<h4 id="алгоритм-гравитационного-n-тел">1. Алгоритм гравитационного
+N-тел</h4>
+<p>Цель: смоделировать гравитационное взаимодействие между множеством
+тел (частиц, планетезималей и т.д.).</p>
+</section>
+<section id="алгоритм-гравитационного-n-тел-1" class="slide level2">
+<h2>Алгоритм гравитационного N-тел</h2>
+<p><img data-src="./image/2.jpg" /></p>
+</section>
+<section id="график" class="slide level2">
+<h2>График</h2>
+<p><img data-src="./image/3.jpg" /></p>
+</section>
+<section id="алгоритм-гидродинамики-вращающегося-диска"
+class="slide level2">
+<h2>Алгоритм гидродинамики вращающегося диска</h2>
+<p>Цель: смоделировать поведение газового протопланетного диска под
+действием внутренних сил, включая турбулентность и вязкость.</p>
+<p>Подход:</p>
+<ul>
+<li>Диск разбит на кольца или ячейки, каждая из которых описывается
+своими параметрами: плотность, скорость, давление.</li>
+<li>Используется упрощённая версия уравнений Навье–Стокса в
+осесимметричном приближении.</li>
+<li>Основное внимание уделяется распределению скорости по радиусу и её
+изменению во времени.</li>
+</ul>
+</section>
+<section id="алгоритм-гидродинамики-вращающегося-диска-1"
+class="slide level2">
+<h2>2. Алгоритм гидродинамики вращающегося диска</h2>
+<p>Особенности:</p>
+<ul>
+<li>Турбулентность моделируется как потеря углового момента.</li>
+<li>Эволюция происходит с перераспределением массы: внутренняя часть
+диска теряет импульс быстрее, чем внешняя.</li>
+</ul>
+<p>Результат: на графиках видно, как изменяется орбитальная скорость
+вещества со временем, особенно в центральной части — что характерно для
+реальных протопланетных дисков.</p>
+</section>
+<section id="график-1" class="slide level2">
+<h2>График</h2>
+<p><img data-src="./image/4.jpg" /></p>
+</section>
+<section id="алгоритм-слияния-частиц" class="slide level2">
+<h2>3. Алгоритм слияния частиц</h2>
+<p>Цель: смоделировать процесс столкновений и слипания частиц,
+приводящий к образованию планетезималей.</p>
+<p>Принцип работы:</p>
+<ul>
+<li><p>Частицы обладают положением, скоростью и массой.</p></li>
+<li><p>При сближении двух частиц на расстояние менее заданного порога
+проверяется их относительная скорость.</p></li>
+<li><p>Если скорость меньше критического значения (имитируя мягкое
+столкновение), частицы сливаются в одну:</p>
+<ul>
+<li>Новая масса — сумма масс.</li>
+<li>Новая скорость и позиция — средневзвешенные значения.</li>
+</ul></li>
+</ul>
+</section>
+<section id="алгоритм-слияния-частиц-1" class="slide level2">
+<h2>3. Алгоритм слияния частиц</h2>
+<p>Физическая интерпретация:</p>
+<ul>
+<li>Модель учитывает, что при больших скоростях столкновение приведёт к
+разрушению, а не слиянию.</li>
+<li>Центральные частицы чаще сталкиваются, образуя более массивные
+тела.</li>
+</ul>
+<p>Результат: визуально наблюдается формирование крупных тел в центре —
+аналог зарождения планет в области максимальной плотности диска.</p>
+</section>
+<section id="график-2" class="slide level2">
+<h2>График</h2>
+<p><img data-src="./image/5.jpg" /></p>
+</section>
+<section id="программная-реализация" class="slide level2">
+<h2>Программная реализация</h2>
+<p>Реализация модели выполнена на языке Python. Этот язык выбран за его
+простоту, большое сообщество и наличие библиотек для научных вычислений
+и визуализации.</p>
+<p>Использованные технологии: * NumPy — для высокопроизводительных
+операций с массивами и векториальными вычислениями. * matplotlib — для
+построения графиков и анимации процессов. * Собственные модули —
+реализующие каждый из трёх алгоритмов отдельно.</p>
+</section>
+<section id="программная-реализация-1" class="slide level2">
+<h2>Программная реализация</h2>
+<p>Реализованные функции:</p>
+<ol type="1">
+<li><p>Гравитационная симуляция:</p>
+<ul>
+<li>Расчёт всех парных сил между телами.</li>
+<li>Поддержка изменения параметров симуляции (количество тел, начальные
+скорости).</li>
+<li>Визуализация орбит.</li>
+</ul></li>
+<li><p>Гидродинамика:</p>
+<ul>
+<li>Моделирование эволюции орбитальной скорости.</li>
+<li>Отображение изменения диска во времени.</li>
+<li>Гибкая настройка параметров вязкости и начального
+распределения.</li>
+</ul></li>
+</ol>
+</section>
+<section id="программная-реализация-2" class="slide level2">
+<h2>Программная реализация</h2>
+<ol start="3" type="1">
+<li><p>Слияние частиц:</p>
+<ul>
+<li>Простая визуализация столкновений.</li>
+<li>График распределения масс после симуляции.</li>
+<li>Подсчёт количества образовавшихся крупных тел.</li>
+</ul></li>
+</ol>
+<p>Что особенно важно:</p>
+<ul>
+<li>Код написан модульно и может быть расширен.</li>
+<li>Простота кода позволяет другим исследователям или студентам легко
+адаптировать его под собственные задачи.</li>
+<li>Отдельные симуляции можно использовать для анимаций, что делает
+проект подходящим даже для образовательных целей.</li>
+</ul>
+</section>
+<section id="обсуждение-результатов" class="slide level2">
+<h2>Обсуждение результатов</h2>
+<p>Мы добились следующих ключевых результатов:</p>
+<ul>
+<li>Построили и реализовали численную модель, охватывающую физику
+формирования планетных систем.</li>
+<li>Проверили корректность работы каждого алгоритма на тестовых примерах
+и визуально убедились в правдоподобии поведения модели.</li>
+<li>Получили первые качественные результаты: устойчивые орбиты,
+перераспределение вещества в диске и образование массивных тел в
+центральных областях.</li>
+<li>Подготовили код, который легко адаптируется и может быть использован
+для последующих исследований.</li>
+</ul>
+</section>
+<section id="заключение-и-самооценка" class="slide level2">
+<h2>Заключение и самооценка</h2>
+<p>Работа над проектом позволила нам объединить знания из физики,
+математики и программирования. Мы:</p>
+<ul>
+<li>Научились применять численные методы к реальным задачам.</li>
+<li>Освоили реализацию алгоритмов, работающих в динамике.</li>
+<li>Улучшили навыки визуализации и анализа результатов.</li>
+<li>Работали как команда, дополняя друг друга в теоретической и
+практической частях проекта.</li>
+</ul>
+<p>Мы считаем проект успешным, так как он дал не только научное, но и
+практическое представление о том, как можно моделировать сложные
+астрофизические процессы с помощью современных вычислительных
+инструментов.</p>
+</section></section>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/reveal.js@^4//dist/reveal.js"></script>
+
+  <!-- reveal.js plugins -->
+  <script src="https://unpkg.com/reveal.js@^4//plugin/notes/notes.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/search/search.js"></script>
+  <script src="https://unpkg.com/reveal.js@^4//plugin/zoom/zoom.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: false,
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: false,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: true,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'default',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'slide',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // reveal.js plugins
+        plugins: [
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    </body>
+</html>
